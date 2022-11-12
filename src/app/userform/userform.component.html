@@ -1,0 +1,12 @@
+<form style="text-align: center;" #f = "ngForm" (submit) = "getFormData(f)">
+    <h2>User Form</h2>
+    <div>
+        <div *ngIf = "IfSubmitted" style="color: green;">
+            Form submitted successfully.
+            <br><br>
+        </div>
+        Name: <input type="text" name="name" ngModel><br><br>
+        Job: <input type="text" name="job" ngModel><br><br>
+        <input type="submit" value="Submit">
+    </div>
+</form>
